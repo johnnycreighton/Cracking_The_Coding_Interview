@@ -6,7 +6,8 @@ namespace CrackingTheCodingInterview
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Cracking The Coding Interview\nFirst Question is on Stacks and Queues");
+            Console.WriteLine("Cracking The Coding Interview");
+            Console.WriteLine("First Question is on Stacks and Queues");
         }
     }
 }
