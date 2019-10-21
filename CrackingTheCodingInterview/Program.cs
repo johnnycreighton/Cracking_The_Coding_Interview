@@ -15,7 +15,7 @@ namespace CrackingTheCodingInterview
                 var isUnique = Console.ReadLine();
                 var chapterOne = new QuestionOne_IsUnique();
 
-                if (chapterOne.CheckUnique(isUnique))
+                if (chapterOne.CheckUnique(isUnique)) 
                     Console.WriteLine($"{isUnique} is a unique string.");
                 else
                     Console.WriteLine($"{isUnique} is NOT a unique string.");
