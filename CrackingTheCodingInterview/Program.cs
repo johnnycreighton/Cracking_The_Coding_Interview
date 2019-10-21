@@ -17,7 +17,6 @@ namespace CrackingTheCodingInterview
 
                 if (chapterOne.CheckUnique(isUnique))
                     Console.WriteLine($"{isUnique} is a unique string.");
-
                 else
                     Console.WriteLine($"{isUnique} is NOT a unique string.");
                 
