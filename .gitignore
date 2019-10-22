@@ -3,6 +3,7 @@
 .idea
 *.class
 out/
+gradlew.bat
 
 # Compiled source #
 ###################
