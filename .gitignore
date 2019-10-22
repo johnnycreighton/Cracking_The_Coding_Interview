@@ -1,4 +1,8 @@
-*/Cracking_The_Coding_Interview/*
+# Scala sources #
+#################
+.idea
+*.class
+out/
 
 # Compiled source #
 ###################
