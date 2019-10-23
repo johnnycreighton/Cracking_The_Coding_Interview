@@ -28,7 +28,7 @@ object StringPermutation {
   }
 }
 
-object main_ extends App {
+object main1 extends App {
   val _a = "Legend"
   val _b = "I am Legend"
 
