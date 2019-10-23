@@ -33,7 +33,9 @@ object StringPermutation {
 object main1 extends App {
   val _a = "Legend"
   val _b = "I am Legend ;)"
+  val _c = "Neo"
 
   println(StringPermutation.isPermutation(_a, _b))
+  println(StringPermutation.isPermutation(_a, _c))
 
 }
