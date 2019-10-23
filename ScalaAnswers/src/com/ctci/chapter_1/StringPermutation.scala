@@ -11,13 +11,15 @@ object StringPermutation {
     def _isPermutation(short: String, long: String): Boolean = {
       val c = short.charAt(0)
 
-      println(c)
-
+      // I was getting a MatchError.scala
+      // the reason being was I was never reaching the true case as
+      // the guard I was using was checking for "< 1" when the length was 1
+      // meaning at that point a case was not being matched resulting in the error
       c match {
+        case x if long.contains(x) && short.length <= 1 => true
         case x if long.contains(x) && short.length > 1 =>
-          _isPermutation(short.substring(1), long)
+          _isPermutation(short.substring(1), long.replaceFirst(x.toString, ""))
         case x if !long.contains(x) => false
-        case x if long.contains(x) && short.length < 1 => true
       }
     }
 
@@ -30,7 +32,7 @@ object StringPermutation {
 
 object main1 extends App {
   val _a = "Legend"
-  val _b = "I am Legend"
+  val _b = "I am Legend ;)"
 
   println(StringPermutation.isPermutation(_a, _b))
 
