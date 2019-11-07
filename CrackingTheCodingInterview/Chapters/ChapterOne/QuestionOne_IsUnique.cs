@@ -1,15 +1,31 @@
-﻿namespace CrackingTheCodingInterview.Chapters.ChapterOne
+﻿using System;
+
+namespace CrackingTheCodingInterview.Chapters.ChapterOne
 {
     public class QuestionOne_IsUnique
     {
-        public bool CheckUnique(string isUnique)
+        public static void Run()
+        {
+            Console.WriteLine("Please enter a string in which you wish to check for uniqueness.");
+            var isUnique = Console.ReadLine();
+            
+            if (CheckUnique(isUnique))
+                Console.WriteLine($"{isUnique} is a unique string.");
+            else
+                Console.WriteLine($"{isUnique} is NOT a unique string.");
+
+            Console.WriteLine("Press the any key to continue.");
+            Console.ReadKey();
+        }
+
+        public static bool CheckUnique(string isUnique)
         {
             char[] charInput = isUnique.ToCharArray();
 
             return CheckIfValid(charInput);
         }
 
-        private bool CheckIfValid(char[] charInput)
+        private static bool CheckIfValid(char[] charInput)
         {
             char[] comparer = new char[charInput.Length];
             
