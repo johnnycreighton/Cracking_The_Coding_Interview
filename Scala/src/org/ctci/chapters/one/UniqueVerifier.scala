@@ -1,11 +1,15 @@
-package com.ctci.chapter_1
+package org.ctci.chapters.one
+
+import org.ctci.oracle.{ChapterOne, Question}
 
 /**
   * Determine if a string has only unique chars
   * What if you cannot use addition data structures
   */
 
-object UniqueVerifier {
+final case class UniqueVerifier() extends ChapterOne {
+
+  override val name: String = "Unique Verifier"
 
   def isUnique(s: String): Boolean = {
 
@@ -28,13 +32,12 @@ object UniqueVerifier {
     // call the helper method with the param s and an empty string for the accumulator
     _isUnique(s, "")
   }
-}
 
-// for now use main methods instead of tests
-object main extends App {
-  val uniqueString = "abcdefghijklmnopqrstuvwxyz"
-  val nonUniqueString = "abcdeabcde"
+  override def answer(): Unit = {
+    val uniqueString = "abcdefghijklmnopqrstuvwxyz"
+    val nonUniqueString = "abcdeabcde"
 
-  println(UniqueVerifier.isUnique(uniqueString))
-  println(UniqueVerifier.isUnique(nonUniqueString))
+    println(this.isUnique(uniqueString))
+    println(this.isUnique(nonUniqueString))
+  }
 }

@@ -1,7 +1,13 @@
-package com.ctci.chapter_1
+package org.ctci.chapters.one
+
+import org.ctci.oracle.{ChapterOne, Question}
+
+/**
+  * can only have one case class in the hierarchy
+  */
 
 // write a method to replace all spaces in a String with '%20'
-object URLify {
+final case class URLify() extends ChapterOne {
 
   def doIt(s: String): String = {
 
@@ -16,4 +22,8 @@ object URLify {
 
     _doIt(s, "")
   }
+
+  override def name: String = ???
+
+  override def answer(): Unit = ???
 }

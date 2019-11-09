@@ -1,6 +1,10 @@
-package com.ctci.chapter_1
+package org.ctci.chapters.one
 
-object StringPermutation {
+import org.ctci.oracle.{ChapterOne, Question}
+
+final case class StringPermutation() extends ChapterOne {
+
+  override val name: String = "String Permutation"
 
   def isPermutation(a: String, b: String): Boolean = {
 
@@ -28,14 +32,14 @@ object StringPermutation {
     if (a.length <= b.length) _isPermutation(a.toLowerCase, b.toLowerCase)
     else _isPermutation(b.toLowerCase, a.toLowerCase)
   }
+
+  override def answer(): Unit = {
+    val _a = "Legend"
+    val _b = "I am Legend ;)"
+    val _c = "Neo"
+
+    println(this.isPermutation(_a, _b))
+    println(this.isPermutation(_a, _c))
+  }
 }
 
-object main1 extends App {
-  val _a = "Legend"
-  val _b = "I am Legend ;)"
-  val _c = "Neo"
-
-  println(StringPermutation.isPermutation(_a, _b))
-  println(StringPermutation.isPermutation(_a, _c))
-
-}
