@@ -28,6 +28,7 @@ namespace CrackingTheCodingInterview
             {
                 GetQuestionNumberFromUser();
 
+
                 switch (questionNumber)
                 {
                     case 1:
@@ -43,6 +44,7 @@ namespace CrackingTheCodingInterview
                         Console.WriteLine($"Question Number:{questionNumber} has not been implemented yet.");
                         break;
                 }
+                invalidInput = true;
             }
         }
 
