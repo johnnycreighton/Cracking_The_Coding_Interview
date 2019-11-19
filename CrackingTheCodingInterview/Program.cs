@@ -28,7 +28,6 @@ namespace CrackingTheCodingInterview
             {
                 GetQuestionNumberFromUser();
 
-
                 switch (questionNumber)
                 {
                     case 1:
