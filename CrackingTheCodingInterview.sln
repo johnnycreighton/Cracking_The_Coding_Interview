@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrackingTheCodingInterview", "CrackingTheCodingInterview\CrackingTheCodingInterview.csproj", "{7317B2CD-108C-473B-8432-6919DB648CCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrackingTheCodingInterview", "CrackingTheCodingInterview\CrackingTheCodingInterview.csproj", "{7317B2CD-108C-473B-8432-6919DB648CCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrackingTheIanoCode", "CrackingTheIanoCode\CrackingTheIanoCode.csproj", "{CBB2260E-FC76-428C-B7F7-AFB6E8F17F49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7317B2CD-108C-473B-8432-6919DB648CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7317B2CD-108C-473B-8432-6919DB648CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7317B2CD-108C-473B-8432-6919DB648CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB2260E-FC76-428C-B7F7-AFB6E8F17F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB2260E-FC76-428C-B7F7-AFB6E8F17F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB2260E-FC76-428C-B7F7-AFB6E8F17F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB2260E-FC76-428C-B7F7-AFB6E8F17F49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
